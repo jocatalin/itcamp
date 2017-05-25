@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: itcamp
+spec:
+  replicas: 6
+  template:
+    metadata:
+      labels:
+        app: itcamp
+    spec:
+      containers:
+      - name: itcamp
+        image: jocatalin/itcamp:2017
+
